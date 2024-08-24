@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back3"
+    tools:context=".SuccessPayment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="280dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/logo" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="Payment Successfull"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        style="bold"/>
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:id="@+id/backToHomeBtn"
+        android:layout_below="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:onClick="backBtn"
+        android:text="@string/back_to_home_text"
+        android:clickable="true"/>
+
+
+</RelativeLayout>

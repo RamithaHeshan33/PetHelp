@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp">
+
+    <ImageView
+        android:layout_marginLeft="20dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageview"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:layout_toEndOf="@id/imageview"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:text="Product Name"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/price"
+        android:layout_toEndOf="@id/imageview"
+        android:textSize="20sp"
+        android:layout_below="@id/name"
+        android:textColor="@color/black"
+        android:text="Price"/>
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_alignParentEnd="true"
+        android:text="Add"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/decreaseQuantityBtn"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/price"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="23dp"
+        android:text="⬇️"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/quantityView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity: 1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/decreaseQuantityBtn"
+        android:layout_below="@id/price"
+        android:text="⛔"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp" />
+
+    <LinearLayout
+        android:id="@+id/breakline"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#ED64D8"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/imageview"/>
+</RelativeLayout>

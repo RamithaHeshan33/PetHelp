@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back3"
+    tools:context=".pet_register"
+    android:gravity="center"
+    android:padding="20dp">
+
+    <Button
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-50dp"
+        android:text="Skip" />
+
+
+    <LinearLayout
+        android:id="@+id/border"
+        android:layout_width="344dp"
+        android:layout_height="500dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_background"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Upload Image Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/uploadImageButton"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:contentDescription="Upload Image"
+                android:src="@drawable/baseline_pets_24" />
+
+            <Button
+                android:id="@+id/selectImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Select Image" />
+        </LinearLayout>
+
+        <!-- Pet Name Input -->
+        <EditText
+            android:id="@+id/petNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/lavender_border"
+            android:hint="Pet Name"
+            android:textColorHint="@color/darkgrey"
+            android:textColor="@color/darkgrey"
+            android:inputType="textPersonName"
+            android:padding="10dp" />
+
+        <!-- Age Input -->
+        <EditText
+            android:id="@+id/ageInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/lavender_border"
+            android:hint="Age"
+            android:textColorHint="@color/darkgrey"
+            android:textColor="@color/darkgrey"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <!-- Color Input -->
+        <EditText
+            android:id="@+id/colorInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/lavender_border"
+            android:hint="Color"
+            android:textColorHint="@color/darkgrey"
+            android:textColor="@color/darkgrey"
+            android:inputType="text"
+            android:padding="10dp" />
+
+        <!-- Sex Input -->
+        <EditText
+            android:id="@+id/sexInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/lavender_border"
+            android:hint="Sex"
+            android:textColorHint="@color/darkgrey"
+            android:textColor="@color/darkgrey"
+            android:inputType="text"
+            android:padding="10dp" />
+
+        <!-- Breed Input -->
+        <EditText
+            android:id="@+id/breedInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/lavender_border"
+            android:hint="Breed"
+            android:textColorHint="@color/darkgrey"
+            android:textColor="@color/darkgrey"
+            android:inputType="text"
+            android:padding="10dp" />
+
+        <!-- Signup Button -->
+        <Button
+            android:id="@+id/signupButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/lavender_border"
+            android:text="Register" />
+
+    </LinearLayout>
+
+</RelativeLayout>

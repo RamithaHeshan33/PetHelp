@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back3"
+    tools:context=".pet_register"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/logo"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <RelativeLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rounded_background"
+        android:elevation="4dp"
+        android:padding="20dp">
+
+        <!-- Title Input -->
+        <EditText
+            android:id="@+id/titleInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lavender_border"
+            android:hint="Title"
+            android:textColorHint="@color/darkgrey"
+            android:textColor="@color/darkgrey"
+            android:inputType="text"
+            android:padding="10dp"/>
+
+        <!-- Description Input -->
+        <EditText
+            android:id="@+id/descriptionInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleInput"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/lavender_border"
+            android:hint="Description"
+            android:textColorHint="@color/darkgrey"
+            android:textColor="@color/darkgrey"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:padding="10dp"/>
+
+        <!-- Link Input -->
+        <EditText
+            android:id="@+id/linkInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/descriptionInput"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/lavender_border"
+            android:hint="Link"
+            android:textColorHint="@color/darkgrey"
+            android:textColor="@color/darkgrey"
+            android:inputType="textUri"
+            android:padding="10dp"/>
+
+        <!-- Register Button -->
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linkInput"
+            android:backgroundTint="@color/black"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/lavender_border"
+            android:text="Submit" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

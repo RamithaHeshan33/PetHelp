@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back4"
+    tools:context=".UserProfileActivity"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/rounded_background"
+            android:elevation="4dp"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="280dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/logo" />
+
+
+                <TextView
+                    android:id="@+id/label_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="E-mail"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="30dp"
+                    android:textSize="30dp"/>
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:textColor="@color/black"
+                    android:inputType="textEmailAddress" />
+
+                <TextView
+                    android:id="@+id/label_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Password"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="30dp"/>
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:textColor="@color/black"
+                    android:inputType="textPassword" />
+
+                <Button
+                    android:id="@+id/updateButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Update"
+                    android:onClick="update" />
+
+                <Button
+                    android:id="@+id/logoutButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Logout"
+                    android:onClick="logout" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/facebook"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@drawable/facebook"
+                android:clickable="true"
+                android:layout_marginRight="20dp"/>
+
+            <ImageView
+                android:id="@+id/youtube"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@drawable/youtube"
+                android:clickable="true"
+                android:layout_marginRight="20dp"/>
+
+            <ImageView
+                android:id="@+id/map"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@drawable/map"
+                android:clickable="true"
+                android:onClick="map" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

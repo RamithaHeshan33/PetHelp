@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddedItemsActivity"
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="Cart"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="35dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/totalValue"
+        android:layout_above="@id/footer"
+        android:background="@drawable/back5"/>
+
+    <TextView
+        android:id="@+id/totalValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total: Rs. 0.00"
+        android:textSize="18sp"
+        android:layout_below="@id/title"
+        android:background="@drawable/totalbackground"
+        android:textColor="@color/white"
+        android:layout_margin="16dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"/>
+
+    <Button
+        android:id="@+id/payButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/footer"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="10dp"
+        android:text="PAY" />
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/rounded_background"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/footerWelcomeBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/baseline_pets_24" />
+
+        <ImageView
+            android:id="@+id/footerFoodBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/dog_food" />
+
+        <ImageView
+            android:id="@+id/footerCartBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/baseline_add_shopping_cart_24" />
+
+        <ImageView
+            android:id="@+id/articles"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/baseline_menu_book_24" />
+    </LinearLayout>
+
+</RelativeLayout>
